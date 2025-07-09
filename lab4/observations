@@ -1,0 +1,39 @@
+Exercise 1
+
+What went wrong?
+	•	The program attempted to divide numerator (4) by denominator (0), causing a division by zero error.
+Was it a problem with the program?
+	•	Yes. Division by zero is undefined and should be handled to prevent runtime errors.
+Or, was it a problem with data?
+	•	It was a programming issue rather than a data problem.
+From the stack trace, what exception was thrown?
+	•	The stack trace shows an ArithmeticException with a message such as "java.lang.ArithmeticException: / by zero". This exception occurs specifically due to the division by zero.
+Did it print “exercise_1(): end." statement?
+	•	No, it did not print “exercise_1(): end.". The ArithmeticException caused the program to exit the method prematurely, so the statement after the division was not executed.
+
+Exercise 2
+
+When you are prompted to enter a number, enter an integer of your choice:
+What is the output? 
+	•	When you enter a valid integer (e.g., 5), the program calculates the square of the number and outputs. 
+	OUTPUT:
+	Enter an integer: 5
+	The square of 5 is 25
+	exercise_2(): end.
+Did it print “exercise2(): end." statement?
+	•	Yes.
+	
+When you are prompted to enter a number, enter the string, “oops”:
+What is the output? 
+	•	When you enter "oops", the program throws an InputMismatchException because it expects an integer input. 
+	OUTPUT:
+	Enter an integer: oops
+	Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:964)
+	at java.base/java.util.Scanner.next(Scanner.java:1619)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2284)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2238)
+	at labs/edu.scu.csen160.lab4.Lab4.exercise_2(Lab4.java:38)
+	at labs/edu.scu.csen160.lab4.ALauncher.main(ALauncher.java:7)
+Did it print “exercise2(): end." statement?
+	•	No.
